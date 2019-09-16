@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','first_name', 'last_name', 'address','profile_image'
     ];
 
     /**
@@ -37,6 +37,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+	public function getImage()
+	{
+	   return $this->profile_image;
+	}
+
+	//relations
 	public function likeable()
     {
         return $this->hasMany('App\like');
