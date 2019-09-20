@@ -25,7 +25,7 @@
                             </div>
                         </div>
 
-						<div class="form-group row">
+						{{-- <div class="form-group row">
                             <label for="profile_image" class="col-md-4 col-form-label text-md-right">{{ __('Profile image') }}</label>
 
                             <div class="col-md-6">
@@ -37,7 +37,7 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>
+                        </div> --}}
 
 						<div class="form-group row">
                             <label for="first_first" class="col-md-4 col-form-label text-md-right">{{ __('First name') }}</label>

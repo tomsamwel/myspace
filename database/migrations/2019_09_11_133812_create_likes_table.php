@@ -17,7 +17,6 @@ class CreateLikesTable extends Migration
 			$table->unsignedBigInteger('user_id');
 			$table->unsignedBigInteger('likeable_id');
             $table->timestamps();
-			$table->softDeletes();	
 
 			$table->primary(['user_id', 'likeable_id']);
         });
